@@ -66,7 +66,7 @@ Die Anwendung verwendet eine **In-Memory SQLite-Datenbank**, dadurch sind Daten 
 sqlite3.connect(":memory:", check_same_thread=False)
 ```
 
-Für eine persistente Speicherung, kann `:memory:` durch `dashboard.db` ersetzt werden:
+Für eine persistente Speicherung: `:memory:` durch `dashboard.db` ersetzen:
 ```python
 sqlite3.connect("dashboard.db", check_same_thread=False)
 ```
