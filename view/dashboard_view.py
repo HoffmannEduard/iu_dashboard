@@ -24,7 +24,7 @@ def render(controller: DashboardController) -> None:
     abgeschlossene_module = daten["abgeschlossene_module"]
 
     if studium is None:
-        st.info("Es wurde noch kein Studium erfasst.")
+        st.info("Bitte unter \"Studium & Module\" → \"Stammdaten Studium\" ein Studium erfassen")
         return
 
     render_dashboard_header(studium)
